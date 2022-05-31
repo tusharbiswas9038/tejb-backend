@@ -111,8 +111,8 @@ router.post('/create-checkout-session', async (req, res) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: 'http://localhost:4200/thankyou',
-      cancel_url: 'http://localhost:4200/error'
+      success_url: 'https://e-shop-21c85.web.app/thankyou',
+      cancel_url: 'https://e-shop-21c85.web.app/error'
   });
 
   res.json({ id: session.id });
