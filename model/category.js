@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // const router = require('../routers/categories');
 // const { route } = require('../routers/categories');
 
-const categorySchema = mongoose.Schema({
+const categorySchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
